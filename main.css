@@ -1,0 +1,779 @@
+html, body {
+  font-family: "Golos Text", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+	color: #313131;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+.title {
+	max-width: 542px;
+	display: flex;
+	flex-direction: column;
+	gap: 44px;
+	margin: 62px 0 0;
+}
+
+header {
+	height: 700px;
+	background-color: #E9DED4;
+	background-blend-mode: color-burn;
+	background-image: url(src/backgroundImg.png);
+}
+
+.headerBackground {
+	background-image: url(src/headerImg.png);
+	background-position: top;
+	background-repeat: no-repeat;
+}
+
+.headerBlock {
+	background-position: top;
+	max-width: 1366px;
+	margin: 0 auto;
+	padding: 26px 0 0;
+	height: 700px;
+}
+
+footer {
+	padding: 40px 72px 72px 72px;
+	background-color: #E9DED4;
+	color: #313131;
+	opacity: 0.6;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 19px;
+	letter-spacing: 0px;
+	text-align: left;		
+}
+
+.footerBlock {	
+	max-width: 1366px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 60px;
+	font-weight: 400;
+	line-height: 66px;
+	letter-spacing: 0px;
+	text-align: center;
+  font-family: "Merriweather", serif;
+  font-style: normal;
+	text-transform: uppercase;
+	margin: 0;
+	span {		
+    display: block;
+    width: 100%;
+		color: #313131;
+	}
+}
+h1 > span:first-child {
+	text-align: left;
+}
+h1 > span:last-child {
+	text-align: right;
+}
+
+h2 {	
+	font-size: 54px;
+	font-weight: 400;
+	line-height: 65px;
+	letter-spacing: 0px;
+	text-align: left;
+  font-family: "Merriweather", serif;
+  font-style: normal;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+h3 {
+  font-family: "Merriweather", serif;
+	font-size: 36px;
+	font-weight: 400;
+	line-height: 49px;
+	letter-spacing: 0px;
+	text-align: left;
+	text-transform: uppercase;
+	margin: 0;
+	span {
+		font-weight: 700;
+	}
+}
+
+span {
+	color: #F54932;
+}
+
+table {
+  border-collapse: collapse;
+	width: 100%;
+	margin-top: 60px;
+}
+td:first-child {
+	border-left-style: none;
+	border-top-style: none;
+	border-bottom-style: none;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0px;
+	text-align: left;
+	opacity: 0.7;
+	padding-left: 0;
+}
+td:last-child {
+	border-right-style: none;
+	border-top-style: none;
+	border-bottom-style: none;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 24px;
+	letter-spacing: 0px;
+	text-align: left;
+	width: 60%;
+}
+tr {
+  table-layout: fixed;
+	border-left-style: none;
+	border-right-style: none;
+  border-collapse: collapse;
+	border-bottom: 2px solid #D0D0D0;
+	border-top: 2px solid #D0D0D0;
+}
+tr:first-child {
+	border-top-style: none;
+}
+tr:last-child {
+	border-bottom-style: none;
+}
+td {
+  table-layout: fixed;
+  border-collapse: collapse;
+  border: 2px solid #D0D0D0;
+	padding: 14px;
+}
+
+.tip {
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0px;
+	text-align: left;
+	color: #3057A2;
+	margin: 48px 0 0;
+}
+
+.subtitle {
+	font-size: 18px;
+	line-height: 23px;
+	letter-spacing: 0px;
+	text-align: center;
+}
+
+a {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 21px;
+	letter-spacing: 0px;
+	text-align: center;
+}
+
+.navBtn {
+	display: flex;
+	gap: 16px;
+}
+
+.btn {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	width: 263px;
+	height: 72px;
+	border-radius: 66px;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 21px;
+	letter-spacing: 0px;
+	text-align: center;
+	padding: 0 20px;
+	cursor: pointer;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+.mainBtn {
+	background-color: #1F1F1F;
+	color: #FFF;
+}
+.mainBtn:hover {
+	background-color: #FBCE51;
+	color: #1F1F1F;
+}
+
+.transparentBtn {
+	border: 2px solid #1F1F1F;
+	color: #1F1F1F;
+}
+.transparentBtn:hover {
+	background-color: #1F1F1F;
+	color: #FFF;
+}
+
+.participants {
+	display: flex;
+	gap: 94px;
+	margin-top: 72px;
+	div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.participantsBlockTitle {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.arrowPrev {
+	transform: rotate(180deg);
+}
+
+.sliderBtns {
+	display: flex;
+	gap: 14px;
+	align-items: center;
+}
+
+.sliderBtns a {
+	display: flex;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	background-color: #313131;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.sliderBtns a:hover {
+ background-color: #FBCE51;
+}
+
+del {
+	color: #F54932;
+	span {
+		color: #1F1F1F;
+	}
+}
+
+button {
+	width: 113px;
+	height: 35px;
+	padding: 12px;
+	border-radius: 62px;
+	border: 1px solid #3057A2;
+	color: #3057A2;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 19px;
+	letter-spacing: 0px;
+	text-align: left;
+	background-color: transparent;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+}
+button:hover {
+	background-color: #3057A2;
+	color: #FFF;
+}
+
+.runningLine {
+  font-family: "Merriweather", serif;
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0px;
+	text-align: right;
+	color: #FFF;
+	background-color: #F54932;
+	text-transform: uppercase;
+	height: 60px;
+	padding: 18px 0 18px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.runningLine p{
+  animation: text 10s infinite linear;
+  padding-left: 100%;
+  white-space: nowrap;
+	margin: 0;
+}
+@keyframes text {
+  0%{
+    transform: translate(0, 0);
+  }
+  
+  100%{
+    transform: translate(-300%, 0);
+  }
+}
+
+.supportSubBlockTop {
+	display: flex;
+	gap: 64px;
+	align-items: center;
+	margin-bottom: 36px;
+}
+
+.supportSubBlockBottom {
+	display: flex;
+	gap: 16px;
+	align-items: center;
+}
+
+.plainImg {
+	position: absolute;
+	right: -60px;
+	bottom: 0;
+}
+
+.supportBlock {
+	margin: 80px auto;
+	max-width: 1366px;
+}
+
+.stagesBlock {
+	margin: 224px auto 0;
+	max-width: 1366px;
+	position: relative;
+}
+
+.stagesBlockTitle {
+	max-width: 806px;
+	position: relative;
+	margin-bottom: 60px;
+}
+
+.stagesBlockSubTitle {
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0px;
+	text-align: left;
+	color: #3057A2;	
+	position: absolute;
+	bottom: 10px;
+	max-width: 280px;
+	right: 226px;
+}
+
+.stagesBlockListSubEl {
+	width: 48%;
+	height: 112px;
+}
+
+.stagesBlockListElGroup {
+	display: flex;
+	gap: 20px;
+	width: 66%;
+	flex-wrap: wrap;
+}
+
+.stagesBlockListEl6 {
+	height: 136px;
+}
+.stagesBlockListEl7 {
+	height: 136px;
+	p {
+		width: 50%;
+	}
+}
+
+.participantsBlock {	
+	margin: 200px auto 340px;
+	max-width: 1366px;
+}
+
+.participantName {
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 29px;
+	letter-spacing: 0px;
+	text-align: center;
+	color: #313131;
+	margin-top: 28px;
+}
+
+.participantTitle {
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0px;
+	text-align: center;
+	color: #313131;
+	opacity: 0.6;
+	margin: 6px 0 20px;
+}
+
+.slideNumber {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 19px;
+	letter-spacing: 0px;
+	text-align: left;
+	color: #313131;
+	span {
+		color: #313131;
+	}
+}
+.slideCount {
+	opacity: 0.6;
+}
+
+
+.stagesBlockList tr, td {
+	border: 20px solid #FFF;
+}
+.stagesBlockListEl {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 24px;
+	letter-spacing: 0px;
+	text-align: left;
+	width: 32%;
+	padding: 20px 20px 20px 20px;
+	box-sizing: border-box;
+	p {
+		margin: 0;
+	}
+	div {
+		display: flex;
+		gap: 16px;
+		div {
+			font-size: 20px;
+			font-weight: 600;
+			line-height: 24px;
+			letter-spacing: 0px;
+			text-align: left;
+			width: 36px;
+			height: 36px;
+			background-color: #FFF;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex: 0 0 auto;
+		}
+	}
+}
+.stagesBlockList tbody {
+	td {
+    background-color: #E9DED4;
+    background-blend-mode: color-burn;
+		background-image: url(src/backgroundImg.png);
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 24px;
+		letter-spacing: 0px;
+		text-align: left;
+		opacity: 1;
+    width: 335px;
+		padding: 20px;
+	}
+}
+.desctopH3 {
+	display: inline;
+	color: #313131;
+	font-weight: 400;
+}
+.mobileH3 {
+	display: none;
+}
+
+
+.itc-slider {
+	position: relative;
+}
+
+.itc-slider__wrapper {
+	overflow: hidden;
+	height: 535px;
+}
+
+.itc-slider__items {
+	transition: transform 0.5s ease;
+}
+
+.itc-slider__item {
+	flex: 0 0 100%;
+	max-width: 100%;
+	user-select: none;
+	will-change: transform;
+}
+
+.itc-slider__btn {
+	display: flex;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	background-color: #313131;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.itc-slider__indicators {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 15;
+	display: flex;
+	justify-content: center;
+	margin: 0 15%;
+	padding-left: 0;
+	list-style: none;
+}
+
+.itc-slider__indicator {
+	flex: 0 1 auto;
+	box-sizing: content-box;
+	width: 30px;
+	height: 5px;
+	margin-right: 3px;
+	margin-left: 3px;
+	text-indent: -999px;
+	background-color: rgb(255 255 255 / 50%);
+	background-clip: padding-box;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	cursor: pointer;
+}
+
+.itc-slider__item {
+	flex: 0 0 auto;
+}
+
+
+.stagesBlockListSliderBtn{
+	position: absolute;
+	width: 375px;
+	bottom: -70px;
+	display: none;
+}
+.btm-slides{
+  display: flex;
+}
+.btm-slides span{
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+	margin: 0 3px;
+	cursor: pointer;
+}
+
+
+@media (max-width: 599px) {
+	.navBtn {
+		flex-direction: column;
+		gap: 14px;
+	}
+	header {
+		height: 812px;
+	}
+	.headerBlock {
+		padding: 26px 20px 0;
+		height: 812px;
+	}
+	.headerBackground {
+    background-position: 75% bottom;
+    background-size: 260%;
+	}
+	
+	.title {
+		max-width: 100%;
+    margin: 40px 0 0;
+		gap: 32px;
+		h1 {
+			font-size: 36px;
+			font-weight: 400;
+			line-height: 40px;
+			letter-spacing: 1.2361623048782349px;
+			text-align: left;
+		}
+	}
+	.btn {
+		width: 100%;
+		height: 47px;
+	}
+
+	.runningLine {
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 18px;
+		letter-spacing: 0px;
+		text-align: right;
+		height: 18px;
+    padding: 10px 0 10px;
+    box-sizing: content-box;
+	}
+
+	h3 {
+		font-size: 28px;
+		font-weight: 400;
+		line-height: 38px;
+		letter-spacing: 0px;
+		text-align: left;
+	}
+	.supportBlock {
+		padding: 0 20px;
+	}
+	.supportSubBlockTop {
+		flex-direction: column;
+		img {
+			width: 335px;
+		}
+	}
+	.supportSubBlockBottom {
+		flex-direction: column;
+		img {
+			width: 335px;
+		}
+	}
+	tr {
+		display: flex;
+		flex-direction: column;
+		border-bottom: none;
+	}
+	td {
+		border: none;
+	}
+	td:last-child {
+    padding: 0 0 15px;
+		width: 100%;
+	}
+	.tip {
+    font-size: 18px;
+    line-height: 22px;
+    margin: 40px 0 0;
+	}
+	h2 {
+    font-size: 36px;
+    line-height: 40px;
+	}
+	.stagesBlockSubTitle {		
+    position: relative;
+    right: 0;
+    top: 15px;
+    font-size: 18px;
+    line-height: 22px;
+	}
+	.stagesBlock {
+    padding: 0 20px;
+		margin: 120px auto 0;
+	}
+	.participantsBlockTitle {
+		flex-direction: column;
+	}
+	.participantsBlock {
+		padding: 0 20px;
+    margin: 200px auto 178px;
+	}
+	.sliderBtns {
+		position: absolute;
+    top: 646px;
+		a {
+			width: 36px;
+			height: 36px;
+		}
+	}
+	footer {
+		padding: 40px 20px;
+	}
+	.stagesBlockListEl, .stagesBlockListEl6, .stagesBlockListEl7 {
+		height: 300px;
+		width: 335px;
+	}
+	.stagesBlockListSubEl {
+		height: 150px!important;
+	}
+	.stagesBlockList tbody {
+		display: flex;
+		tr {
+			position: relative;
+			flex-direction: row;
+			gap: 17px;
+			border-right-width: 16px;
+			border: none;
+			td {
+				font-size: 18px;
+				font-weight: 500;
+				line-height: 24px;
+				letter-spacing: 0px;
+				text-align: left;
+				opacity: 1;
+				padding: 62px 20px;
+				height: 300px;
+			}
+		}
+	}
+	.stagesBlockListElAbsolute {
+		position: absolute;
+		top: 150px;
+		padding: 28px 20px!important;
+	}
+	.plainImg {
+		top: 255px;
+    z-index: 2;
+    left: 30px;
+		width: 335px;
+	}
+	.stagesBlockList {
+    width: 300px;
+    margin: 225px auto;
+		p {
+			width: 100%;
+		}
+	}
+	.itc-slider__wrapper {
+    width: 320px;
+    margin: 0 auto;
+	}
+	.stagesBlockListSliderBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+	}
+	.stagesBlockListSubEl.tableSlide {
+		height: 300px!important;
+		div {
+			position: relative;
+			z-index: 1;
+		}
+	}
+	.itc-slider__btn {
+		width: 36px;
+		height: 36px;
+	}
+	.itc-slider__btn:hover {
+		background-color: #FBCE51;
+	}
+	.desctopH3 {
+		display: none;
+	}
+	.mobileH3 {
+		display: block;
+		margin-bottom: 34px;
+	}
+}
